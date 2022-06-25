@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
+        //MENU SIMPLES
         System.out.println("1 - Cº -> F");
         System.out.println("2 - Cº -> K");
-        //menu simples
         String pergunta;
 
         do {
@@ -27,10 +26,9 @@ public class Main {
                 //caso ele escolha uma opção indisponivel entra no else
             } else
                 System.out.println("Opção invalida.");
-            System.out.print("Gostaria de tentar novamente ? [s/y] ");
+            System.out.print("Gostaria de tentar novamente ? [s/n] ");
             pergunta = teclado.next();
         } while (pergunta.equals("s"));
         System.out.println("Fim do programa. ");
     }
 }
-//teste
